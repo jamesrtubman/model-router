@@ -1,0 +1,8 @@
+{
+  "name": "model-router",
+  "description": "Scores each prompt's complexity and routes the work to the right Claude model (Haiku / Sonnet / Opus). Announces the chosen model before acting.",
+  "version": "0.1.0",
+  "author": {
+    "name": "James Tubman"
+  }
+}
