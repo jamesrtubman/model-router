@@ -1,0 +1,18 @@
+{
+  "name": "model-router",
+  "description": "Routes each prompt to the right model by complexity, across Claude Code, Codex CLI, Gemini CLI, and Copilot CLI.",
+  "owner": {
+    "name": "James Tubman",
+    "url": "https://github.com/jamesrtubman"
+  },
+  "plugins": [
+    {
+      "name": "model-router",
+      "description": "Scores prompt complexity and routes to the right model tier, announcing the choice before acting.",
+      "source": "./",
+      "category": "productivity",
+      "tags": ["model", "routing", "complexity", "cost", "productivity"],
+      "hooks": "hooks/copilot-hooks.json"
+    }
+  ]
+}

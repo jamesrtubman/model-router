@@ -1,0 +1,16 @@
+# model-router — OpenAI Codex CLI adapter
+#
+# Merge this into your Codex config at  ~/.codex/config.toml
+# Replace /ABSOLUTE/PATH/TO/model-router with where you cloned this repo.
+#
+# Codex's UserPromptSubmit hook uses the same JSON contract as Claude Code, so the
+# shared route.py works unchanged — we just set MODEL_ROUTER_PROVIDER=openai so it maps
+# tiers to GPT models. After editing, run `/hooks` inside Codex to trust the hook.
+
+[[hooks.UserPromptSubmit]]
+
+[[hooks.UserPromptSubmit.hooks]]
+type = "command"
+command = 'env MODEL_ROUTER_PROVIDER=openai python3 "/ABSOLUTE/PATH/TO/model-router/route.py"'
+timeout = 30
+statusMessage = "Routing by complexity"

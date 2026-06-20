@@ -1,0 +1,14 @@
+{
+  "name": "model-router",
+  "description": "Scores each prompt's complexity and routes to the right model tier, announcing the choice before acting. On Copilot it injects a routing rubric at session start.",
+  "version": "0.2.0",
+  "author": {
+    "name": "James Tubman",
+    "url": "https://github.com/jamesrtubman"
+  },
+  "homepage": "https://github.com/jamesrtubman/model-router",
+  "repository": "https://github.com/jamesrtubman/model-router",
+  "license": "MIT",
+  "keywords": ["model", "routing", "complexity", "cost", "copilot", "productivity"],
+  "hooks": "hooks/copilot-hooks.json"
+}

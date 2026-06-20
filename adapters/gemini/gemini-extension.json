@@ -1,0 +1,5 @@
+{
+  "name": "model-router",
+  "version": "0.2.0",
+  "description": "Scores each prompt's complexity and routes to a Gemini tier (Flash-Lite / Flash / Pro), announcing the chosen model before acting."
+}
