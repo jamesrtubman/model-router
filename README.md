@@ -3,6 +3,10 @@
 <img src="https://img.shields.io/badge/works%20with-4%20tools-111111?style=flat-square" alt="Works with 4 tools">
 <img src="https://img.shields.io/badge/license-MIT-111111?style=flat-square" alt="MIT license">
 
+<p align="center">
+  <img src="model-router-icon.png" alt="model-router" width="160">
+</p>
+
 # model-router
 
 *It reads your prompt, sizes up the job, and hands it to the right model. Then it tells you who got it.*
