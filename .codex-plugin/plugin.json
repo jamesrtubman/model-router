@@ -1,7 +1,7 @@
 {
   "name": "model-router",
-  "description": "Scores each prompt's complexity and routes to the right model tier (Claude Haiku/Sonnet/Opus by default). Provider-agnostic core also drives Codex CLI, Gemini CLI, and OpenAI-compatible APIs. Announces the chosen model before acting.",
   "version": "0.2.0",
+  "description": "Scores each prompt's complexity and routes to the right model tier (GPT-5 mini / GPT-5 / GPT-5 Pro on Codex). Announces the chosen model before acting.",
   "author": {
     "name": "James Tubman",
     "url": "https://github.com/jamesrtubman"
@@ -9,16 +9,20 @@
   "homepage": "https://github.com/jamesrtubman/model-router",
   "repository": "https://github.com/jamesrtubman/model-router",
   "license": "MIT",
-  "keywords": ["model", "routing", "complexity", "cost", "haiku", "sonnet", "opus", "hooks", "codex", "gemini", "openai", "multi-provider"],
+  "keywords": ["model", "routing", "complexity", "cost", "codex", "openai", "hooks"],
   "hooks": "./hooks/hooks.json",
   "interface": {
     "displayName": "model-router",
     "shortDescription": "Routes each prompt to the right model by complexity",
-    "longDescription": "Scores every prompt with fast heuristics and routes it to the right model tier, announcing the choice before acting. Works with Claude Code, Codex CLI, Gemini CLI, and OpenAI-compatible APIs.",
+    "longDescription": "Scores every prompt with fast heuristics and routes it to the right GPT tier, announcing the choice before acting and recommending a /model switch when you're below the tier.",
     "developerName": "James Tubman",
     "category": "Productivity",
     "capabilities": ["Lifecycle hooks"],
     "websiteURL": "https://github.com/jamesrtubman/model-router",
+    "defaultPrompt": [
+      "Refactor the auth service and prove the token refresh is race-free.",
+      "What is a closure in JavaScript?"
+    ],
     "brandColor": "#111111"
   }
 }

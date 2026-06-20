@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "env MODEL_ROUTER_PROVIDER=gemini python3 \"/ABSOLUTE/PATH/TO/model-router/route.py\""
+          }
+        ]
+      }
+    ]
+  }
+}

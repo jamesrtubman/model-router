@@ -1,0 +1,41 @@
+{
+  "claude": {
+    "label": "Claude",
+    "delegation": "subagent",
+    "tiers": {
+      "trivial":  {"model": "haiku",  "display": "Haiku 4.5",  "agent": "model-router:router-haiku"},
+      "moderate": {"model": "sonnet", "display": "Sonnet 4.6", "agent": "model-router:router-sonnet"},
+      "complex":  {"model": "opus",   "display": "Opus 4.8",   "agent": "model-router:router-opus"}
+    }
+  },
+  "openai": {
+    "label": "Codex",
+    "delegation": "switch",
+    "switch_hint": "/model <id>  (one-off: codex -c model='\"<id>\"' ...)",
+    "tiers": {
+      "trivial":  {"model": "gpt-5-mini", "display": "GPT-5 mini"},
+      "moderate": {"model": "gpt-5",      "display": "GPT-5"},
+      "complex":  {"model": "gpt-5-pro",  "display": "GPT-5 Pro"}
+    }
+  },
+  "gemini": {
+    "label": "Gemini",
+    "delegation": "switch",
+    "switch_hint": "/model <id>  (or start with: gemini --model <id>)",
+    "tiers": {
+      "trivial":  {"model": "gemini-flash-lite", "display": "Gemini Flash-Lite"},
+      "moderate": {"model": "gemini-flash",      "display": "Gemini Flash"},
+      "complex":  {"model": "gemini-pro",        "display": "Gemini Pro"}
+    }
+  },
+  "copilot": {
+    "label": "Copilot",
+    "delegation": "switch",
+    "switch_hint": "/model <id>",
+    "tiers": {
+      "trivial":  {"model": "gpt-5-mini", "display": "GPT-5 mini"},
+      "moderate": {"model": "gpt-5",      "display": "GPT-5"},
+      "complex":  {"model": "gpt-5-pro",  "display": "GPT-5 Pro"}
+    }
+  }
+}
